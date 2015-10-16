@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+   <project name="MyProject" default="info" basedir=".">
+   
+
+   <property name="MyName"  value="Kumar Bandhu"/>
+   <target name="info"  depends="info2">
+      <echo>Hello World - Welcome to Apache Ant!</echo>
+      <echo > The version of ant which I am using is ${ant.version}
+       and base directory is ${basedir} </echo>
+      <echo> The location of build file is ${ant.file}</echo>
+      <echo> The version of JDk used by ANT is ${ant.java.version} and 
+            the name of the project is ${ant.project.name}</echo> 
+   </target>
+
+   <target name="info2">
+     <echo> The owner of this project is ${MyName} </echo>
+   </target>
+   
+
+
+   <target name="info3">
+     <echo> ANT Jar's location is  ${ant.core.lib} </echo>
+   </target>
+</project>
